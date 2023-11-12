@@ -24,4 +24,5 @@ urlpatterns = [
     path('add/',Add,name='add'),
     path('edit/',Edit,name='edit'),
     path('update/<str:id>',Update,name='update'),
+     path('delete/<str:id>',Delete,name='delete'),
 ]

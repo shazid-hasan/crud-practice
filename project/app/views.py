@@ -56,3 +56,13 @@ def Update(request,id):
         return redirect('home')
 
     return redirect(request,'index.html')
+
+def Delete(request,id):
+    emp = Employees.objects.filter(id = id).delete()
+
+    context={
+        'emp':emp,
+    }
+
+
+    return redirect(request,'index.html',context)
