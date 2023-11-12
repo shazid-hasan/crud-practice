@@ -23,4 +23,5 @@ urlpatterns = [
     path('',Index,name='home'),
     path('add/',Add,name='add'),
     path('edit/',Edit,name='edit'),
+    path('update/<str:id>',Update,name='update'),
 ]
